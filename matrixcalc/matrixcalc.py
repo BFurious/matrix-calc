@@ -237,6 +237,42 @@ def cofactor(a, m, n):
     b = slicer(a, m, n)
     return (-1)**(m + n) * determinant(b)
 
+# Function to form lower triangular
+# matrix
+def lower(matrix, row, col):
+ 
+     
+    for i in range(0, row):
+     
+        for j in range(0, col):
+         
+            if (i < j):
+             
+                print("0", end = " ");
+             
+            else:
+                print(matrix[i][j],
+                       end = " " );
+         
+        print(" ");
+     
+# Function to form upper triangular matrix
+def upper(matrix, row, col):
+ 
+    for i in range(0, row):
+     
+        for j in range(0, col):
+         
+            if (i > j):
+                print("0", end = " ");
+             
+            else:
+                print(matrix[i][j],
+                       end = " " );
+         
+        print(" ");
+ 
+
 def determinant(a):
     """Returns the determinant of an nxn matrix.
     
